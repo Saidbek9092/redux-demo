@@ -4,7 +4,6 @@ import buyCoffee from "../redux/coffee/cofeeActions";
 
 
 const CoffeeContainer = (props) => {
-    console.log(props)
     return (
         <div>
             <h2>Number of coffee = {props.numberOfCoffee}</h2>

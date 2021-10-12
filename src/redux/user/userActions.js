@@ -26,7 +26,7 @@ const fetchUserFailure = (error) => {
 export const fetchUsers = () => {
     return (dispatch) => {
         dispatch(fetchUserRequest)
-        axios.get('https://jsonplaceholder.typicode.com/users')
+        axios.get('https://mohir-server.herokuapp.com/blogs')
             .then(response => {
                 const users = response.data
                 dispatch(fetchUserSuccess(users))
@@ -36,5 +36,34 @@ export const fetchUsers = () => {
 
         })
     }
-
 }
+
+export const sendValuesData = data => {
+    return (dispatch) => {
+        dispatch(fetchUserRequest)
+        axios.post('/api/login', data)
+            .then(res=>{
+                const newdata = res.data
+                dispatch(fetchUserSuccess(newdata))
+            }).catch(error=> {
+            const errorMsg = error.message
+            dispatch(fetchUserFailure(errorMsg))
+        })
+    }
+}
+// export const fetchCourses = () => {
+//     return (dispatch) => {
+//         dispatch(fetchUserRequest)
+//         axios.get('https://mohir-server.herokuapp.com/courses')
+//             .then(response => {
+//                 const users = response.data
+//                 dispatch(fetchUserSuccess(users))
+//             }).catch(error=> {
+//             const errorMsg = error.message
+//             dispatch(fetchUserFailure(errorMsg))
+//         })
+//     }
+// }
+
+
+

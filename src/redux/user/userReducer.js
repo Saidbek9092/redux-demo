@@ -1,7 +1,7 @@
 import { FETCH_USERS_REQUEST, FETCH_USERS_SUCCESS, FETCH_USERS_FAILURE } from "./userTypes";
 
 const initialstate = {
-    loading: false,
+    loading: true,
     users: [],
     error: ""
 }
@@ -12,6 +12,7 @@ const reducer = (state = initialstate, action) => {
             return {
                 ...state,
                 loading: true,
+                error: ''
             }
         case FETCH_USERS_SUCCESS:
             return {

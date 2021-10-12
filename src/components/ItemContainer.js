@@ -4,7 +4,6 @@ import { buyCake } from "../redux/cake/cakeActions";
 import { buyIceCream } from "../redux/icecream/icecreamActions";
 
 const ItemContainer = (props) => {
-    console.log(props)
     return (
         <div>
             <h2>Item is - {props.item}</h2>

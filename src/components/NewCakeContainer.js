@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import {buyCake} from "../redux/cake/cakeActions";
 
 const NewCakeContainer = (props) => {
-    console.log(props)
     const [number, setNumber] = useState(1)
     return (
         <div>
