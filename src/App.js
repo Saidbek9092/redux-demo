@@ -15,10 +15,10 @@ const App = () => {
     return (
         <Provider store={store}>
             <div className="App">
-                <UserContainer/>
+                {/*<UserContainer/>*/}
                 {/*<ItemContainer cake/>*/}
-                {/*<IceCreamContainer/>*/}
-                {/*<CakeContainer/>*/}
+                <IceCreamContainer/>
+                <CakeContainer/>
                 {/*<ItemContainer coffee/>*/}
                 {/*<CoffeeContainer/>*/}
                 {/*<HooksContainer/>*/}
