@@ -12,7 +12,8 @@ const reducer = (state = initialstate, action) => {
             return {
                 ...state,
                 loading: true,
-                error: ''
+                error: '',
+                users: []
             }
         case FETCH_USERS_SUCCESS:
             return {
