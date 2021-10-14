@@ -1,4 +1,4 @@
-import {BUY_CAKE} from "./cakeTypes";
+import {BUY_CAKE, ADD_CAKE} from "./cakeTypes";
 
 //Action creator
 export const buyCake = (number = 1) => {
@@ -7,6 +7,14 @@ export const buyCake = (number = 1) => {
         payload: number //5
     }
 }
+
+export const addCake = (number = 1) => {
+    return {
+        type: ADD_CAKE,
+        payload: number //5
+    }
+}
+
 
 
 
