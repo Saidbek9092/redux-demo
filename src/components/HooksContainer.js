@@ -44,7 +44,7 @@ const HooksContainer = (props) => {
     };
 
     const userData = () => {
-        console.log(userToken)
+        console.log('test')
     }
 
     return (
