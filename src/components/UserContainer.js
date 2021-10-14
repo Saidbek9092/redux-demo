@@ -30,7 +30,7 @@ const UserContainer = (props) => {
 
     const onFinish = (values) => {
         setData(values)
-        props.sendData(values)
+        props.sendData(data)
         // axios.post('/api/login', values).then(res => {
         //     notification.success({
         //         message: 'Successfully logged in'
@@ -88,6 +88,9 @@ const UserContainer = (props) => {
                 </Button>
             </Form.Item>
         </Form>
+
+        front end
+        data.filter(front end)
     </div>
 }
 

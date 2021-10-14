@@ -7,7 +7,7 @@ import { Button, Form, Input } from "antd";
 const HooksContainer = (props) => {
     const [number, setNumber] = useState(1)
     // const numOfCakes = useSelector(state => state.cake.numberOfCakes)
-    const userToken = useSelector(state => state)
+    const userToken = useSelector(state => state.user.users.access)
     const dispatch = useDispatch()
 
     // useEffect(()=> {
