@@ -27,6 +27,7 @@ export const fetchUsers = () => {
     return (dispatch) => {
         dispatch(fetchUserRequest)
         axios.get('https://mohir-server.herokuapp.com/courses')
+
             .then(response => {
                 const users = response.data
                 dispatch(fetchUserSuccess(users))
