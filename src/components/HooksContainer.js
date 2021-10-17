@@ -45,7 +45,7 @@ const HooksContainer = (props) => {
     };
 
     const userData = () => {
-        console.log('test')
+        console.log('check')
     }
 
     return (
