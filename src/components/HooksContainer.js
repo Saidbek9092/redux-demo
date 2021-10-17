@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { buyCake, addCake, } from "../redux/cake/cakeActions";
 import { fetchUsers, sendValuesData } from "../redux/user/userActions";
 import { Button, Form, Input } from "antd";
 
