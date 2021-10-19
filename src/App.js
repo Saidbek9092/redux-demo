@@ -19,7 +19,7 @@ const App = () => {
                 {/*<UserContainer/>*/}
                 <ItemContainer cake/>
                 <IceCreamContainer/>
-                <CakeContainer/>
+                {/*<CakeContainer/>*/}
                 <ItemContainer coffee/>
                 {/*<CoffeeContainer/>*/}
                 <HooksContainer/>
