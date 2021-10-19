@@ -17,10 +17,10 @@ const App = () => {
         <Provider store={store}>
             <div className="App">
                 {/*<UserContainer/>*/}
-                {/*<ItemContainer cake/>*/}
-                {/*<IceCreamContainer/>*/}
-                {/*<CakeContainer/>*/}
-                {/*<ItemContainer coffee/>*/}
+                <ItemContainer cake/>
+                <IceCreamContainer/>
+                <CakeContainer/>
+                <ItemContainer coffee/>
                 {/*<CoffeeContainer/>*/}
                 <HooksContainer/>
                 {/*<NewCakeContainer/>*/}
