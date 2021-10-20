@@ -2,7 +2,7 @@ import { BUY_COFFEE } from "./coffeeTypes";
 import { BUY_ICECREAM } from "../icecream/icecreamTypes";
 
 const initialState = {
-    numberOfCoffee: 20
+    numberOfCoffee: 10
 }
 
 const coffeeReducer = (state = initialState, action) => {
