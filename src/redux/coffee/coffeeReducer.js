@@ -1,12 +1,13 @@
 import { BUY_COFFEE } from "./coffeeTypes";
+import { BUY_ICECREAM } from "../icecream/icecreamTypes";
 
 const initialState = {
-    numberOfCoffee: 1
+    numberOfCoffee: 20
 }
 
-const coffeereducer = (state = initialState, action) => {
+const coffeeReducer = (state = initialState, action) => {
     switch (action.type) {
-        case BUY_COFFEE: return {
+        case BUY_ICECREAM: return {
             ...state, numberOfCoffee: state.numberOfCoffee - 1
         }
         default: return state
@@ -14,4 +15,5 @@ const coffeereducer = (state = initialState, action) => {
 
 }
 
-export default coffeereducer
+
+export default coffeeReducer
