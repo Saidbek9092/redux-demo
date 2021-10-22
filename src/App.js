@@ -11,7 +11,6 @@ import UserContainer from "./components/UserContainer";
 import axios from "axios";
 
 axios.defaults.baseURL = 'https://ziyodov.pythonanywhere.com'
-
 const App = () => {
     return (
         <Provider store={store}>
