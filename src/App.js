@@ -14,10 +14,10 @@ const App = () => {
             <div className="App">
                 {/*<UserContainer/>*/}
                 {/*<ItemContainer cake/>*/}
-                <IceCreamContainer/>
+                {/*<IceCreamContainer/>*/}
                 {/*<ItemContainer coffee/>*/}
-                <CoffeeContainer/>
-                {/*<HooksContainer/>*/}
+                {/*<CoffeeContainer/>*/}
+                <HooksContainer/>
                 {/*<NewCakeContainer/>*/}
             </div>
         </Provider>
