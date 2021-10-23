@@ -9,9 +9,9 @@ const HooksContainer = (props) => {
     const userToken = useSelector(state => state.user.users.access)
     const dispatch = useDispatch()
 
-    useEffect(()=> {
-        dispatch(fetchUsers())
-    }, [])
+    // useEffect(()=> {
+    //     dispatch(fetchUsers())
+    // }, [])
 
 
     useEffect(() => {
