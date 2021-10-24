@@ -36,10 +36,10 @@ const HooksContainer = (props) => {
     //
     // };
 
-    // const onFinishFailed = (errorInfo) => {
-    //     console.log(errorInfo)
-    //
-    // };
+    const onFinishFailed = (errorInfo) => {
+        console.log(errorInfo)
+
+    };
 
     const userData = () => {
         console.log('check')
