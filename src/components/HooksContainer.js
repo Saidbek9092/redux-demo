@@ -18,17 +18,17 @@ const HooksContainer = (props) => {
         fetchUsers()
     }, [])
 
-    // return userData.loading ? (
-    //         <h2>Loading...</h2>) :
-    //     userData.error ? <h2>{userData.error}</h2> :
-    //         <div><h2>User List</h2>
-    //             <div>
-    //                 {
-    //                     userData && userData.users.blogs && userData.users.blogs.map((user, index) => <p
-    //                         key={index}>{user.blog_title}</p>)
-    //                 }
-    //             </div>
-    //         </div>
+    return userData.loading ? (
+            <h2>Loading...</h2>) :
+        userData.error ? <h2>{userData.error}</h2> :
+            <div><h2>User List</h2>
+                <div>
+                    {
+                        userData && userData.users.blogs && userData.users.blogs.map((user, index) => <p
+                            key={index}>{user.blog_title}</p>)
+                    }
+                </div>
+            </div>
 
 
     const onFinish = (values) => {
