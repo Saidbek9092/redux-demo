@@ -40,10 +40,10 @@ const HooksContainer = (props) => {
     //     console.log(errorInfo)
     //
     // };
-    //
-    // const userData = () => {
-    //     console.log('check')
-    // }
+
+    const userData = () => {
+        console.log('check')
+    }
 
     return (
         <div>
