@@ -35,11 +35,11 @@ const HooksContainer = (props) => {
         dispatch(sendValuesData(values))
 
     };
-
-    const onFinishFailed = (errorInfo) => {
-        console.log(errorInfo)
-
-    };
+    //
+    // const onFinishFailed = (errorInfo) => {
+    //     console.log(errorInfo)
+    //
+    // };
 
     const userData = () => {
         console.log('check')
