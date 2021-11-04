@@ -5,6 +5,7 @@ import CakeContainer from "./components/CakeContainer";
 import IceCreamContainer from "./components/IceCreamContainer";
 import CoffeeContainer from "./components/CoffeeContainer";
 import HooksContainer from "./components/HooksContainer";
+import NewCakeContainer from "./components/NewCakeContainer";
 import axios from "axios";
 
 axios.defaults.baseURL = 'https://ziyodov.pythonanywhere.com'
@@ -17,8 +18,8 @@ const App = () => {
                 {/*<IceCreamContainer/>*/}
                 {/*<ItemContainer coffee/>*/}
                 {/*<CoffeeContainer/>*/}
-                <HooksContainer/>
-                {/*<NewCakeContainer/>*/}
+                {/*<HooksContainer/>*/}
+                <NewCakeContainer/>
             </div>
         </Provider>
     );
