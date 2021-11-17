@@ -11,6 +11,7 @@ const HooksContainer = (props) => {
 
     useEffect(()=> {
         dispatch(fetchUsers())
+        console.log('saidbek')
     }, [])
 
     //
