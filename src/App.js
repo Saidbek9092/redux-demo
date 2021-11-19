@@ -20,6 +20,7 @@ const App = () => {
                     <Route path="/4" component={ About }/>
                     <Route path="/5" component={ About }/>
                     <Route path="/new1" component={ About }/>
+                    <Route path="/new2" component={ About }/>
             </div>
         </BrowserRouter>
     );
