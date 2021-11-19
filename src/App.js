@@ -15,6 +15,8 @@ const App = () => {
                     <Route path="/shop/:userId" component={ User }/>
                     <Route path="/about" component={ About }/>
                     <Route path="/1" component={ About }/>
+                    <Route path="/2" component={ About }/>
+                    <Route path="/3" component={ About }/>
             </div>
         </BrowserRouter>
     );
