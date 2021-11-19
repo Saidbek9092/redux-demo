@@ -1,28 +1,31 @@
 import './App.css';
-import { Provider } from "react-redux";
-import store from "./redux/store";
-import CakeContainer from "./components/CakeContainer";
-import IceCreamContainer from "./components/IceCreamContainer";
-import CoffeeContainer from "./components/CoffeeContainer";
-import HooksContainer from "./components/HooksContainer";
-import NewCakeContainer from "./components/NewCakeContainer";
-import axios from "axios";
+import Nav from "./components/Nav";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Shop from "./components/shop";
+import About from "./components/about";
+import User from "./components/user";
 
-axios.defaults.baseURL = 'https://ziyodov.pythonanywhere.com'
 const App = () => {
     return (
-        <Provider store={store}>
+        <BrowserRouter>
             <div className="App">
-                {/*<UserContainer/>*/}
-                {/*<ItemContainer cake/>*/}
-                {/*<IceCreamContainer/>*/}
-                {/*<ItemContainer coffee/>*/}
-                {/*<CoffeeContainer/>*/}
-                {/*<HooksContainer/>*/}
-                <NewCakeContainer/>
+                <Nav/>
+                    <Route path="/" exact component={ Home }/>
+                    <Route path="/shop" exact component={ Shop }/>
+                    <Route path="/shop/:userId" component={ User }/>
+                    <Route path="/about" component={ About }/>
             </div>
-        </Provider>
+        </BrowserRouter>
     );
 }
+
+const Home = () => {
+    return (
+        <h1>Home page</h1>
+    )
+}
+
+
+
 
 export default App;
