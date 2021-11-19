@@ -17,6 +17,8 @@ const App = () => {
                     <Route path="/1" component={ About }/>
                     <Route path="/2" component={ About }/>
                     <Route path="/3" component={ About }/>
+                    <Route path="/4" component={ About }/>
+                    <Route path="/5" component={ About }/>
             </div>
         </BrowserRouter>
     );
