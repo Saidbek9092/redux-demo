@@ -1,8 +1,10 @@
 import React from "react";
+import classes from "./about.scss"
+
 
 const About = () => {
     return (
-        <h1>About page</h1>
+        <h1 className={classes.header}>About page</h1>
     )
 }
 
