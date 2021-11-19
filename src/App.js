@@ -14,6 +14,7 @@ const App = () => {
                     <Route path="/shop" exact component={ Shop }/>
                     <Route path="/shop/:userId" component={ User }/>
                     <Route path="/about" component={ About }/>
+                    <Route path="/1" component={ About }/>
             </div>
         </BrowserRouter>
     );
