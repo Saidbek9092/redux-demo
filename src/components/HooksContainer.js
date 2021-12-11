@@ -3,6 +3,10 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchUsers, sendValuesData } from "../redux/user/userActions";
 import { Button, Form, Input } from "antd";
 
+export const helper = (data) => {
+    console.log(data.filter( el => el > 5 ))
+}
+
 const HooksContainer = (props) => {
     const [number, setNumber] = useState(1)
     const numOfCakes = useSelector(state => state.cake.numberOfCakes)
@@ -11,7 +15,6 @@ const HooksContainer = (props) => {
 
     useEffect(()=> {
         dispatch(fetchUsers())
-        console.log('saidbek')
     }, [])
 
     //
@@ -43,7 +46,6 @@ const HooksContainer = (props) => {
     // };
 
     const userData = () => {
-        console.log('check')
     }
 
     return (

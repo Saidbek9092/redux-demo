@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./about.scss"
+import classes from "./about.sass"
 
 
 const About = () => {

@@ -44,7 +44,6 @@ const UserContainer = (props) => {
     };
 
     const onFinishFailed = (errorInfo) => {
-        console.log(errorInfo)
         // notification.error({
         //     message: 'Enter correct data!'
         // })
