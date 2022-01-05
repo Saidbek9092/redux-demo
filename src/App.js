@@ -7,6 +7,8 @@ import User from "./components/user";
 import CoffeeContainer from "./components/CoffeeContainer";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import CakeContainer from "./components/CakeContainer";
+import { Test } from "./components/Test";
 
 const App = () => {
     return (
@@ -21,7 +23,9 @@ const App = () => {
         //     </div>
         // </BrowserRouter>
         <Provider store={store}>
-            <CoffeeContainer/>
+            <Test/>
+            {/*<CakeContainer/>*/}
+            {/*<CoffeeContainer/>*/}
         </Provider>
     );
 }
