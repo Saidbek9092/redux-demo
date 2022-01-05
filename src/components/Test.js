@@ -8,6 +8,7 @@ export const Test = () => {
     return (
         <>
             <h1>{Name}</h1>
+
             <Child Changedata={(data)=> dataChange(data)} />
         </>
     );
