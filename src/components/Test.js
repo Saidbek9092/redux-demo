@@ -8,7 +8,7 @@ export const Test = () => {
     return (
         <>
             <h1>{Name}</h1>
-
+            <h1>test</h1>
             <Child Changedata={(data)=> dataChange(data)} />
         </>
     );
