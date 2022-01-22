@@ -9,8 +9,13 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 import CakeContainer from "./components/CakeContainer";
 import { Test } from "./components/Test";
+import Video from "./components/Video";
 
 const App = () => {
+
+    const handleData = () => {
+        console.log('saidbek')
+    }
     return (
         // <BrowserRouter>
         //     <div className="App">
@@ -22,21 +27,10 @@ const App = () => {
         //
         //     </div>
         // </BrowserRouter>
-        <Provider store={store}>
-            <Test/>
-            {/*<CakeContainer/>*/}
-            {/*<CoffeeContainer/>*/}
-        </Provider>
+        <Video data = {handleData}/>
+
     );
 }
-
-const Home = () => {
-    return (
-        <h1>Home page</h1>
-    )
-}
-
-
 
 
 export default App;
