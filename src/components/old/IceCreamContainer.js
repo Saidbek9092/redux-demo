@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { buyIceCream } from "../redux/icecream/icecreamActions";
+import { buyIceCream } from "../../redux/icecream/icecreamActions";
 
 
 const icecreamContainer = (props) => {

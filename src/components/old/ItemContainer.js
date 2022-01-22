@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import { buyCake } from "../redux/cake/cakeActions";
-import { buyIceCream } from "../redux/icecream/icecreamActions";
+import { buyCake } from "../../redux/cake/cakeActions";
+import { buyIceCream } from "../../redux/icecream/icecreamActions";
 
 const ItemContainer = (props) => {
     return (

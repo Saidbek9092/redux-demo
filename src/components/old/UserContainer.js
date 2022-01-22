@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
-import { fetchUsers } from "../redux/user/userActions";
-import { buyIceCream } from "../redux/icecream/icecreamActions";
+import { fetchUsers } from "../../redux/user/userActions";
+import { buyIceCream } from "../../redux/icecream/icecreamActions";
 import 'antd/dist/antd.css';
 import {Form, Input, Button} from "antd";
-import {sendValuesData} from "../redux/user/userActions";
+import {sendValuesData} from "../../redux/user/userActions";
 import axios from "axios";
 import {notification } from 'antd';
 

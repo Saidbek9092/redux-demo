@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import buyCoffee from "../redux/coffee/cofeeActions";
+import buyCoffee from "../../redux/coffee/cofeeActions";
 import { helper } from "./HooksContainer";
 
 

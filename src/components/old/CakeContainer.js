@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import {buyCake} from "../redux/cake/cakeActions";
+import {buyCake} from "../../redux/cake/cakeActions";
 import './cake.scss'
 
 const CakeContainer = (props) => {

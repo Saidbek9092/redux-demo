@@ -1,15 +1,15 @@
 import './App.css';
-import Nav from "./components/Nav";
+import Nav from "./components/old/Nav";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Shop from "./components/shop";
-import About from "./components/about";
-import User from "./components/user";
-import CoffeeContainer from "./components/CoffeeContainer";
+import Shop from "./components/old/shop";
+import About from "./components/old/about";
+import User from "./components/old/user";
+import CoffeeContainer from "./components/old/CoffeeContainer";
 import { Provider } from "react-redux";
 import store from "./redux/store";
-import CakeContainer from "./components/CakeContainer";
-import { Test } from "./components/Test";
-import Video from "./components/Video";
+import CakeContainer from "./components/old/CakeContainer";
+import { Test } from "./components/old/Test";
+import Video from "./components/old/Video";
 
 const App = () => {
 

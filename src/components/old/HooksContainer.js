@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchUsers, sendValuesData } from "../redux/user/userActions";
+import { fetchUsers, sendValuesData } from "../../redux/user/userActions";
 import { Button, Form, Input } from "antd";
 
 export const helper = (data) => {
