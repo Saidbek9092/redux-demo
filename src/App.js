@@ -13,7 +13,7 @@ import Video from "./components/old/Video";
 
 const App = () => {
 
-    const handleData = () => {
+                 const handleData = () => {
     }
     return (
         // <BrowserRouter>
@@ -26,7 +26,7 @@ const App = () => {
         //
         //     </div>
         // </BrowserRouter>
-        <Video data = {handleData}/>
+        <Video data={ handleData }/>
 
     );
 }

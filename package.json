@@ -63,13 +63,14 @@
     "sweetalert2": "^11.1.7"
   },
   "husky": {
-    "hooks" : {
-  "pre-commit": "lint-staged"
-}
-},
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "*.js": [
-      "npm run lint:fix", "git add"
+      "npm run lint:fix",
+      "git add"
     ]
   }
 }
