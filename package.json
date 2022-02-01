@@ -54,10 +54,22 @@
   "devDependencies": {
     "aux": "0.0.6",
     "axios": "^0.21.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.2",
     "react-redux": "^7.2.6",
     "react-router-dom": "^5.2.0",
     "sass": "^1.35.1",
     "sass-loader": "^12.3.0",
     "sweetalert2": "^11.1.7"
+  },
+  "husky": {
+    "hooks" : {
+  "pre-commit": "lint-staged"
+}
+},
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix", "git add"
+    ]
   }
 }

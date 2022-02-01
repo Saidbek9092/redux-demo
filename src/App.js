@@ -14,7 +14,6 @@ import Video from "./components/old/Video";
 const App = () => {
 
     const handleData = () => {
-        console.log('saidbek')
     }
     return (
         // <BrowserRouter>
