@@ -18,8 +18,10 @@ const App = () => {
             <div className="App">
                 <Nav/>
                     <Route path="/shop" exact component={ Shop }/>
-                    <Route path="/shop/:userId" component={ User }/>
                     <Route path="/about" component={ About }/>
+                    <Route path="/shop/:userId" component={ Video }/>
+                    <Route path="/shop/:userId" component={ CakeContainer }/>
+                    <Route path="/shop/:userId" component={ Test }/>
 
             </div>
         </BrowserRouter>
