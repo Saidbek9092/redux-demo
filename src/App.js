@@ -13,21 +13,16 @@ import Video from "./components/old/Video";
 
 const App = () => {
 
-    const handleData = () => {
-    }
-
     return (
-        // <BrowserRouter>
-        //     <div className="App">
-        //         <Nav/>
-        //             <Route path="/" exact component={ Home }/>
-        //             <Route path="/shop" exact component={ Shop }/>
-        //             <Route path="/shop/:userId" component={ User }/>
-        //             <Route path="/about" component={ About }/>
-        //
-        //     </div>
-        // </BrowserRouter>
-        <Video data={ handleData }/>
+        <BrowserRouter>
+            <div className="App">
+                <Nav/>
+                    <Route path="/shop" exact component={ Shop }/>
+                    <Route path="/shop/:userId" component={ User }/>
+                    <Route path="/about" component={ About }/>
+
+            </div>
+        </BrowserRouter>
 
     );
 }
