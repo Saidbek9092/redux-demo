@@ -1,7 +1,7 @@
 import { usePracticumContext } from "./context/PracticumCONTEXT";
 
 const Lesson = () => {
-    console.log('testLessonasdasd')
+    console.log('Lesson')
     return (
         <h1>Lesson</h1>
     )

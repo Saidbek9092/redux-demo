@@ -3,7 +3,7 @@ import Lesson from "./Lesson";
 
 const Topic = () => {
     const {topic, setTopic, handleClick} = usePracticumContext()
-    console.log( 'TestTopic' )
+    console.log( 'Topic' )
     return (
         <>    <h1>{ topic }</h1>
             <button onClick={ () => handleClick('Saidbek') }>ChangeTopic</button>
