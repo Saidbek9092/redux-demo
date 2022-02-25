@@ -1,33 +1,28 @@
 import './App.css';
-import Nav from "./components/old/Nav";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Shop from "./components/old/shop";
-import About from "./components/old/about";
-import User from "./components/old/user";
-import CoffeeContainer from "./components/old/CoffeeContainer";
-import { Provider } from "react-redux";
-import store from "./redux/store";
-import CakeContainer from "./components/old/CakeContainer";
-import { Test } from "./components/old/Test";
-import Video from "./components/old/Video";
+import { useState } from "react";
+import AgeButton from "./components/old/AgeButton";
+import SalaryButton from "./components/old/SalaryButton";
+import ParentComponent from "./components/ParentComponent";
 
 const App = () => {
+    const [age, setAge] = useState(12);
+    const [salary, setSalary] = useState(5000);
 
-    const handleData = () => {
-    }
+    const ageHandler = ()  => {
+        setAge(age+1);
+    };
+
+    const salaryHandler = () => {
+        setSalary(salary+500);
+    };
+
     return (
-        // <BrowserRouter>
-        //     <div className="App">
-        //         <Nav/>
-        //             <Route path="/" exact component={ Home }/>
-        //             <Route path="/shop" exact component={ Shop }/>
-        //             <Route path="/shop/:userId" component={ User }/>
-        //             <Route path="/about" component={ About }/>
-        //
-        //     </div>
-        // </BrowserRouter>
-        <Video data={ handleData }/>
-
+        <div>
+            {/*<h1>Use CallBack Example</h1>*/}
+            {/*<AgeButton clickHandler={ageHandler} age={age}/>*/}
+            {/*<SalaryButton clickHandler={salaryHandler} salary={salary}/>*/}
+            <ParentComponent/>
+        </div>
     );
 }
 
