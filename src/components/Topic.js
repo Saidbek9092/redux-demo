@@ -1,12 +1,13 @@
 import { usePracticumContext } from "./context/PracticumCONTEXT";
-import Lesson from "./Lesson";
+import React from "react";
+
 
 const Topic = () => {
-    const {topic, setTopic, handleClick} = usePracticumContext()
-    console.log( 'Topic' )
+    const {number, handleClick} = usePracticumContext()
+    console.log('topic')
     return (
-        <>    <h1>{ topic }</h1>
-            <button onClick={ () => handleClick('Saidbek') }>ChangeTopic</button>
+        <>    <h1>{ number }</h1>
+            <button onClick={handleClick}>Icrement number</button>
         </>
     )
 }

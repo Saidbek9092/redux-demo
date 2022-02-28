@@ -1,9 +1,17 @@
 import { usePracticumContext } from "./context/PracticumCONTEXT";
+import React, { useEffect, useState } from "react";
 
 const Lesson = () => {
-    console.log('Lesson')
+    const {test, number} = usePracticumContext()
+    useEffect(()=> {
+        console.log('useeffect')
+    }, [number])
+
     return (
-        <h1>Lesson</h1>
+        <div>
+            <h1>Lesson</h1>
+        </div>
+
     )
 }
 
