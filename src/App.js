@@ -21,7 +21,6 @@ const App = () => {
         <div>
             {/*<h1>Use CallBack Example</h1>*/}
             {/*<AgeButton clickHandler={ageHandler} age={age}/>*/}
-
             {/*<SalaryButton clickHandler={salaryHandler} salary={salary}/>*/}
             <ParentComponent/>
         </div>
