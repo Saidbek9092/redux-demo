@@ -1,8 +1,10 @@
-import './App.css';
 import { useState } from "react";
 import AgeButton from "./components/old/AgeButton";
 import SalaryButton from "./components/old/SalaryButton";
 import ParentComponent from "./components/ParentComponent";
+
+import './App.css';
+
 
 const App = () => {
     const [age, setAge] = useState(12);
