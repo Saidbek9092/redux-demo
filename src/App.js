@@ -16,6 +16,7 @@ const App = () => {
         setSalary(salary+500);
     };
 
+
     return (
 
         <div>
