@@ -18,11 +18,10 @@ const App = () => {
         setSalary(salary+500);
     };
 
-
     return (
 
         <div>
-            <h1>Use CallBack Example</h1>
+            <h1>Use CallBack Example for Testing</h1>
             <AgeButton clickHandler={ageHandler} age={age}/>
             <SalaryButton clickHandler={salaryHandler} salary={salary}/>
             <ParentComponent/>
