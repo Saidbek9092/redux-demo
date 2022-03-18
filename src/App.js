@@ -27,6 +27,7 @@ const App = () => {
             { users.map( user => (
                 <div>
                     <Data user={ user } showAll={showAll}/>
+                    <Data user={ user } showAll={showAll}/>
                 </div>
             ) ) }
         </div>
