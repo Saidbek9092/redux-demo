@@ -1,33 +1,61 @@
-import { useState } from "react";
-import AgeButton from "./components/old/AgeButton";
-import SalaryButton from "./components/old/SalaryButton";
-import ParentComponent from "./components/ParentComponent";
+import { useEffect, useState } from "react";
 
 import './App.css';
-
+import axios from "axios";
 
 const App = () => {
-    const [age, setAge] = useState(12);
-    const [salary, setSalary] = useState(5000);
+    const [ users, setUsers ] = useState( [] )
+    const [showAll, setShowAll] = useState(false)
+    useEffect( () => {
+        try {
+            const fetchData = async () => {
+                await axios.get( 'https://jsonplaceholder.typicode.com/users' ).then( ( {data} ) => setUsers( data ) )
+            }
+            fetchData()
+        } catch (er) {
+            console.log( er )
+        }
+    }, [] )
 
-    const ageHandler = ()  => {
-        setAge(age+1);
-    };
-
-    const salaryHandler = () => {
-        setSalary(salary+500);
-    };
+    const handleOpenAll = () => {
+        setShowAll(!showAll)
+    }
 
     return (
-
         <div>
-            <h1>Use CallBack Example for Testing</h1>
-            <AgeButton clickHandler={ageHandler} age={age}/>
-            <SalaryButton clickHandler={salaryHandler} salary={salary}/>
-            <ParentComponent/>
+            <button onClick={handleOpenAll}>Open All</button>
+            { users.map( user => (
+                <div>
+                    <Data user={ user } showAll={showAll}/>
+                </div>
+            ) ) }
         </div>
     );
 }
 
 
 export default App;
+
+const Data = ( {user, showAll} ) => {
+    const [ show, setShow ] = useState( showAll )
+
+    useEffect(()=> {
+        setShow(showAll)
+    }, [showAll])
+
+    const handleClick = () => {
+        setShow(!show)
+    }
+    return (
+        <>
+            <button style={ {background: "green"} }
+                    onClick={handleClick}>{ user.name } { user.username }</button>
+            { show ? <div>
+                <p>{ user.email }</p>
+                <p>{ user.phone }</p>
+                <p>{ user.website }</p>
+            </div> : null } </>
+
+    )
+}
+
