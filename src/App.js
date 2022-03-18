@@ -28,6 +28,8 @@ const App = () => {
                 <div>
                     <Data user={ user } showAll={showAll}/>
                     <Data user={ user } showAll={showAll}/>
+                    <h1>Hello world</h1>
+
                 </div>
             ) ) }
         </div>
