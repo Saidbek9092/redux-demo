@@ -26,6 +26,7 @@ const App = () => {
             <button onClick={handleOpenAll}>Open All</button>
             { users.map( user => (
                 <div>
+                    <h1>I'm changing the content</h1>
                     <Data user={ user } showAll={showAll}/>
                 </div>
             ) ) }
