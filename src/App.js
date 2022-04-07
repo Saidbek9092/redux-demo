@@ -21,7 +21,6 @@ const App = () => {
     return (
 
         <div>
-            <h1>Use CallBack Example for Testing</h1>
             <AgeButton clickHandler={ageHandler} age={age}/>
             <SalaryButton clickHandler={salaryHandler} salary={salary}/>
             <ParentComponent/>
