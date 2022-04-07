@@ -1,7 +1,6 @@
 import { useState } from "react";
 import AgeButton from "./components/old/AgeButton";
 import SalaryButton from "./components/old/SalaryButton";
-import ParentComponent from "./components/ParentComponent";
 
 import './App.css';
 
