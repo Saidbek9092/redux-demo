@@ -5,7 +5,6 @@ import ParentComponent from "./components/ParentComponent";
 
 import './App.css';
 
-
 const App = () => {
     const [age, setAge] = useState(12);
     const [salary, setSalary] = useState(5000);
