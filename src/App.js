@@ -8,6 +8,7 @@ function App() {
         <div>
             <Router>
                 <Switch>
+
                     <Route path="/">
                         <Landing/>
                         <Header/>

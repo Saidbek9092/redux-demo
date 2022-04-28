@@ -18,6 +18,8 @@ const Header = ( props ) => {
 
     `;
 
+
+
     const Logo = styled.a`
       padding: 0;
       width: 80px;
