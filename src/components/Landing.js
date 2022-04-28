@@ -98,11 +98,7 @@ const Landing = ( props ) => { // a functional component
                     <LogoOne src='../../public/images/cta-logo-one.svg'
                              alt='' /> {/*holder for your logo-one should be here, to be styled as imgage*/ }
                     <Signup>GET IT ALL HERE</Signup>
-                    <Description> {/*holder for a paragraph of text to be styled as p tag*/ }
-                        Get premium access to raya and the latest dragon show with a Disney+ subscription. As of
-                        03/04/2021
-                        , the price of Disney+ and the Disney bundle will increase by $1.
-                    </Description>
+
                     <LogoTwo src='../../public/images/cta-logo-two.svg'
                              alt='' /> {/*holder for your logo-two should be here, to be styled as image*/ }
                 </CTA>
