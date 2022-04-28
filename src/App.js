@@ -1,31 +1,20 @@
-import { useState } from "react";
-import AgeButton from "./components/old/AgeButton";
-import SalaryButton from "./components/old/SalaryButton";
-import ParentComponent from "./components/ParentComponent";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Landing from "./components/Landing";
+import Header from "./components/Header";
+import './App.css'
 
-import './App.css';
-
-const App = () => {
-    const [age, setAge] = useState(12);
-    const [salary, setSalary] = useState(5000);
-
-    const ageHandler = ()  => {
-        setAge(age+1);
-    };
-
-    const salaryHandler = () => {
-        setSalary(salary+500);
-    };
-
-    return (
+function App() {
+    return(
         <div>
-            <h1>Use CallBack Example for Testing</h1>
-            <AgeButton clickHandler={ageHandler} age={age}/>
-            <SalaryButton clickHandler={salaryHandler} salary={salary}/>
-            <ParentComponent/>
-        </div>
-    );
+            <Router>
+                <Switch>
+                    <Route path="/">
+                        <Landing/>
+                        <Header/>
+                    </Route>
+                </Switch>
+            </Router>
+        </div>)
 }
-
 
 export default App;
