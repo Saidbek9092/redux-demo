@@ -15,7 +15,6 @@ const Header = ( props ) => {
       padding: 0 36px;
       letter-spacing: 16px;
       z-index: 3; //sets priority level for the navbar against other elements
-
     `;
 
     const Logo = styled.a`
