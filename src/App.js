@@ -1,20 +1,13 @@
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import Landing from "./components/Landing";
-import Header from "./components/Header";
-import './App.css'
+import UserData from "./components/UserData";
+import TestData from "./components/TestData";
 
 function App() {
-    return(
+    return (
         <div>
-            <Router>
-                <Switch>
-                    <Route path="/">
-                        <Landing/>
-                        <Header/>
-                    </Route>
-                </Switch>
-            </Router>
-        </div>)
+            <UserData />
+            <TestData />
+        </div>
+    )
 }
 
 export default App;
