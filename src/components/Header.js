@@ -7,7 +7,8 @@ const Header = ( props ) => {
       top: 0;
       left: 0;
       right: 0;
-      height: 70px; //TODO I added here todo to check
+      // I added cooment
+      height: 270px; //TODO I added here todo to check
       background-color: #090b13; //gives the nav a background a color
       display: flex;
       justify-content: space-between; //creates space between nav elements
